@@ -18,3 +18,6 @@ dengan:
 > g(n) = Estimasi jarak ke tujun dari n.
 > 
 > f(n) = Total cost dari jalur dari n ke tujuan
+
+## Hasil Implementasi
+![result](to_bucharest.gif)
