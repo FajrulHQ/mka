@@ -1,6 +1,6 @@
 ## Shortest Path
 
-> Bagian dari search algoritma untuk menemukan jalur terpendek dari satu titik menuju tujuan.
+> Bagian dari search algoritma untuk menemukan jalur terpendek dari satu titik menuju tujuan. Codingan bisa dicek di [link berikut](shortest_path.ipynb)
 ---
 Pada case ini menggunakan informasi jarak dan keterkaitan setiap kota di Rumania sesuai pada gambar berikut
 
