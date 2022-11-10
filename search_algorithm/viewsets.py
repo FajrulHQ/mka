@@ -3,7 +3,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
-from search_algorithm import search_algorithm
+from search_algorithm import shortest_path
 from search_algorithm.serializers import ShortestPathSerializer
 
 
@@ -18,7 +18,7 @@ class ShortestPathViewset(ModelViewSet):
         try:
             city = serializer.validated_data['city']
             method = serializer.validated_data['method']
-            path = search_algorithm(city, method)
+            path = shortest_path(city, method)
             return Response(path, status=status.HTTP_200_OK)
 
         except Exception as e:

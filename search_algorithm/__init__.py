@@ -106,7 +106,7 @@ def get_location(loc):
     return list(filter(lambda x: x["location"] == loc, locations))[0]
 
 
-def search_algorithm(first_loc, method):
+def shortest_path(first_loc, method):
     path = [first_loc]
     recent_loc = first_loc
     g_total, i = 0, 0

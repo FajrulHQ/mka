@@ -33,5 +33,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/', include(router.urls)),
     path('docs/', documentation, name="docs"),
-    re_path('(^(?!(admin|docs)).*$)', admin.site.urls, name='index'),
+    re_path('(^(?!(admin|docs)).*$)', documentation, name='index'),
 ]
